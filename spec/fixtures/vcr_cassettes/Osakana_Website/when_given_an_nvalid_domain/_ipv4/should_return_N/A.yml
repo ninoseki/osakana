@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/never_ever_exists.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 11:22:25 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd11d32e15a53316c52794b2430d30d891548156145; expires=Wed, 22-Jan-20
+        11:22:25 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 11:21:14 GMT
+      Expires:
+      - Tue, 22 Jan 2019 11:22:14 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.082997694 0.082620145
+      Cf-Cache-Status:
+      - HIT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d1a4838986a5de-NRT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 11:22:25 GMT
+recorded_with: VCR 4.0.0

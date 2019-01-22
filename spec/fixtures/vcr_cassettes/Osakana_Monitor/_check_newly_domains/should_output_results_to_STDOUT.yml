@@ -1,0 +1,756 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dnpedia.com/tlds/ajax.php?_search=false&cmd=search&columns=id,name,zoneid,length,idn,thedate,ipv4,ipasname,ipasnumber,ipchecked,&days=1&ecf=name&ecv=~%25sagawa%25&mode=added&nd=1547680980461&page=1&rows=500&sidx=length&sord=asc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      Referer:
+      - https://dnpedia.com/tlds/search.php
+      X-Requested-With:
+      - XMLHttpRequest
+      Connection:
+      - close
+      Host:
+      - dnpedia.com
+      User-Agent:
+      - http.rb/4.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:36 GMT
+      Server:
+      - Apache/2.4.25 (Debian)
+      Set-Cookie:
+      - PHPSESSID=0jqq9f0nu06fi6q74rtiihj8tg; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '260'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      base64_string: |
+        H4sIAAAAAAAAA83VzYqDMBAH8HeZc4RE+2VfZdnDrAYNq8bGUWlL372jtFA6
+        0NsukRz+E5PJ7zZX6LGycDQKyBM2awq28KEcOKcKBsJAcNQKGtc6TlvNOfiZ
+        /39dwZW8k2m9O+wUdNhyLxiwwhmT02hBwcV3djkEhW+5bGxXUc2tuYkru7Ux
+        1bZEWm6m2uSJNklq+Kjrpw3vrQmHR+9nNbY/NjzrorbFr10e0fwl64KbetXt
+        pc7FoztInY9Hl0tdH40u11J3ikdnpC7Eo0uljuLRZVI3xqPbSN0cj24rded4
+        dO+zgqdN46ZP4yL7X+D7uGAgTR945s9537c78x41OawHAAA=
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:36 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-que.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:36 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d00e97d6f87dfb07ce4912b451af829e51548198276; expires=Wed, 22-Jan-20
+        23:04:36 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:19 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:19 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.077078658 0.076812149
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a91a8971a524-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-que.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n{\"rrname\":\"sagawa-que.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:36 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qui.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:37 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db0471ad0df6b88fd1b223540a8b9c1431548198276; expires=Wed, 22-Jan-20
+        23:04:36 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:20 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:20 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.079144839 0.078826992
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a91d9cdba536-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-qui.com\",\"rrdata\":\"111.240.227.179\",\"rrtype\":\"A\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":9}\r\n{\"rrname\":\"sagawa-qui.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n{\"rrname\":\"sagawa-qui.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:37 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quo.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:37 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df07f8a1db5074a0484bc13c80e6feb9a1548198277; expires=Wed, 22-Jan-20
+        23:04:37 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:20 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:20 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.00227347 0.002087645
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a920dbbd94ed-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-quo.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n{\"rrname\":\"sagawa-quo.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:37 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qup.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:38 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9e7f772b5953bd9cdf30983cfccdb16b1548198277; expires=Wed, 22-Jan-20
+        23:04:37 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:21 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:21 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.007136486 0.006725858
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a92408399511-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-qup.com\",\"rrdata\":\"111.240.227.179\",\"rrtype\":\"A\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":9}\r\n{\"rrname\":\"sagawa-qup.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n{\"rrname\":\"sagawa-qup.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:38 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quq.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:38 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3078baca3a6d9fe68a6af6130b1ac9931548198278; expires=Wed, 22-Jan-20
+        23:04:38 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:21 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:21 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.086174145 0.085915624
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a9268b52a530-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-quq.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n{\"rrname\":\"sagawa-quq.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:38 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qur.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:39 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dba8f269f27788a573b9000c7471d5aa81548198278; expires=Wed, 22-Jan-20
+        23:04:38 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:22 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:22 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.014869642 0.014603555
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a929ca0e94cf-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-qur.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n{\"rrname\":\"sagawa-qur.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:39 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qut.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:39 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcc9f445dd22528bfe46ba7570af1bd7b1548198279; expires=Wed, 22-Jan-20
+        23:04:39 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:22 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:22 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.015828993 0.015565664
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a92c69f2a536-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-qut.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n{\"rrname\":\"sagawa-qut.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:39 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quu.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:40 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcf5682ea1f3849ee4db47b10d66783e11548198279; expires=Wed, 22-Jan-20
+        23:04:39 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:23 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:23 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.07369228 0.073433167
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a92f8b0494c9-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-quu.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n{\"rrname\":\"sagawa-quu.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n{\"rrname\":\"sagawa-quu.com\",\"rrdata\":\"111.240.227.179\",\"rrtype\":\"A\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":9}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:40 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quw.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:40 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6822982c5fa6f7493e44502afc113a971548198280; expires=Wed, 22-Jan-20
+        23:04:40 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:23 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:23 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.016161431 0.015934501
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a932bbfca524-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-quw.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137924,\"time_last\":1548137924,\"count\":1}\r\n{\"rrname\":\"sagawa-quw.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137924,\"time_last\":1548137924,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:40 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quy.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:41 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da0df8b1d4980fe0501d44abb1d067e2e1548198280; expires=Wed, 22-Jan-20
+        23:04:40 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:24 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:24 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.044500148 0.04427044
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a935ea4aa52a-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawa-quy.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n{\"rrname\":\"sagawa-quy.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:41 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawardslive.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:41 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dabe64d49a8355971d458712d0541528d1548198281; expires=Wed, 22-Jan-20
+        23:04:41 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:24 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:24 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.134411402 0.134157078
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a9392909a530-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"198.54.115.183\",\"rrtype\":\"A\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":9}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"smx1.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"dns1.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"smx3.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"smx2.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"dns2.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:41 GMT
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/sagawardstv.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jan 2019 23:04:42 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7b463d7746fa550530a48fda3d1a59bb1548198281; expires=Wed, 22-Jan-20
+        23:04:41 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60, public
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:04:25 GMT
+      Expires:
+      - Tue, 22 Jan 2019 23:05:25 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.002901925 0.002602836
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49d5a93cf94e9511-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"198.54.115.183\",\"rrtype\":\"A\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":9}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"smx3.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"dns2.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"smx1.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"smx2.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"dns1.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n"
+    http_version: 
+  recorded_at: Tue, 22 Jan 2019 23:04:42 GMT
+recorded_with: VCR 4.0.0
