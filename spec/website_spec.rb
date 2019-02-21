@@ -30,11 +30,20 @@ RSpec.describe Osakana::Website, :vcr do
     end
   end
 
-  context "when given an nvalid domain" do
+  context "when given an invalid domain" do
     let(:website) { subject.new(domain: "never_ever_exists.com", date: "2019-01-01") }
     describe "#ipv4" do
       it "should return N/A" do
         expect(website.ipv4).to eq("N/A")
+      end
+    end
+  end
+
+  context "when given an IP with no active domain" do
+    let(:website) { subject.new(ipv4: "133.130.76.217", date: "2019-01-01") }
+    describe "#domain" do
+      it "should return N/A" do
+        expect(website.domain).to eq("N/A")
       end
     end
   end

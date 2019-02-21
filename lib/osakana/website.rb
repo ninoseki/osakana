@@ -24,6 +24,7 @@ module Osakana
         res = @robtex.ip(ipv4)
         active = res.dig("act")
         next unless active
+        next if active.empty?
 
         out << active.first.dig("o")
       end.first || "N/A"

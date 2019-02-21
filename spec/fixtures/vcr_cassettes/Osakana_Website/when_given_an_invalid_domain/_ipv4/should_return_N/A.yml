@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Jan 2019 11:22:25 GMT
+      - Thu, 21 Feb 2019 00:48:28 GMT
       Content-Type:
       - application/x-ndjson
       Transfer-Encoding:
@@ -29,22 +29,22 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dd11d32e15a53316c52794b2430d30d891548156145; expires=Wed, 22-Jan-20
-        11:22:25 GMT; path=/; domain=.robtex.com; HttpOnly
+      - __cfduid=d94e83604847b15ecd9455e1d244c7eee1550710108; expires=Fri, 21-Feb-20
+        00:48:28 GMT; path=/; domain=.robtex.com; HttpOnly
       Cache-Control:
-      - max-age=60, public
+      - max-age=60
       Content-Language:
       - en-US
       Last-Modified:
-      - Tue, 22 Jan 2019 11:21:14 GMT
+      - Thu, 21 Feb 2019 00:45:15 GMT
       Expires:
-      - Tue, 22 Jan 2019 11:22:14 GMT
+      - Thu, 21 Feb 2019 00:46:15 GMT
       Access-Control-Allow-Origin:
       - "*"
       X-Rt-Time:
-      - 0.082997694 0.082620145
+      - 0.002960031 0.002577209
       Cf-Cache-Status:
-      - HIT
+      - REVALIDATED
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Vary:
@@ -52,10 +52,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 49d1a4838986a5de-NRT
+      - 4ac5352139f645de-TPE
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 22 Jan 2019 11:22:25 GMT
+  recorded_at: Thu, 21 Feb 2019 00:48:28 GMT
 recorded_with: VCR 4.0.0
