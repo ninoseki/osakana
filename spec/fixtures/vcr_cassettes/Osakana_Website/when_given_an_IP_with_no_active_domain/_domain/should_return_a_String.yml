@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/ipquery/133.130.76.217
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 21 Feb 2019 00:48:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4a0efdb94fd79a847b59b6957e8969441550710108; expires=Fri, 21-Feb-20
+        00:48:28 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Thu, 21 Feb 2019 00:46:49 GMT
+      Expires:
+      - Thu, 21 Feb 2019 00:47:49 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.058758463 0.058287816
+      Cf-Cache-Status:
+      - REVALIDATED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ac535242afd45d8-TPE
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        eyJzdGF0dXMiOiJvayIsImFjdCI6W10sImFjdGgiOltdLCJwYXMiOlt7Im8i
+        OiJzbXRwLmtpcml5YW1hLmNvbSIsInQiOjE0ODQxNTk1NjZ9LHsibyI6InBv
+        cC5raXJpeWFtYS5jb20iLCJ0IjoxNDg0MTU5NTY2fSx7Im8iOiJnZ2xhc3Mu
+        anAiLCJ0IjoxNDg1NjQxNTc2fV0sInBhc2giOlt7Im8iOiJyaXBwbGVwbGFu
+        bmluZy5jb20iLCJ0IjoxNDk1ODQ4Njc5fSx7Im8iOiJrZHN4Lm5ldCIsInQi
+        OjE0ODk0Mzk2NTN9LHsibyI6ImRucy5nZ2xhc3MuanAiLCJ0IjoxNDYxMzQ2
+        OTY3fSx7Im8iOiJraXJpeWFtYS5jb20iLCJ0IjoxNTMzMzg4MzIxfSx7Im8i
+        OiJzb21lcnN3ZWIuY29tIiwidCI6MTQ5NDcyNTIwN30seyJvIjoid3d3Lmtp
+        cml5YW1hLmNvbSIsInQiOjE1MzYyODgwNjF9LHsibyI6Im5pc2hpbXVyYS1o
+        ZWFydC1jbGluaWMub3IuanAiLCJ0IjoxNDg5NjM4MjI1fSx7Im8iOiJ3d3cu
+        bmlzaGltdXJhLWhlYXJ0LWNsaW5pYy5vci5qcCIsInQiOjE0OTkyNDc1Mzl9
+        LHsibyI6Ind3dy5zb21lcnN3ZWIuY29tIiwidCI6MTUzNjcwNDg5OX1dLCJj
+        b3VudHJ5IjoiSmFwYW4iLCJhcyI6NzUwNiwiYXNuYW1lIjoiR01PLUlOVEVS
+        TkVUIEdNTyBJbnRlcm5ldCBJTkMuIiwid2hvaXNkZXNjIjoiMTI4LjAuMC4w
+        IC0gMjU1LjI1NS4yNTUuMjU1Iiwicm91dGVkZXNjIjoiR01PIEludGVybmV0
+        LEluYyIsImJncHJvdXRlIjoiMTMzLjEzMC42NC4wLzE4In0=
+    http_version: 
+  recorded_at: Thu, 21 Feb 2019 00:48:29 GMT
+recorded_with: VCR 4.0.0
