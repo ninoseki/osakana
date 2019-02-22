@@ -5,6 +5,8 @@ require "slack/incoming/webhooks"
 module Osakana
   class Notifier
     def notifiy(title, attachments = [])
+      attachments << { title: "N/A" } if attachments.empty?
+
       if slack_webhook_url?
         slack = Slack::Incoming::Webhooks.new(slack_webhook_url, channel: slack_channel)
         slack.post title, attachments: attachments
@@ -28,8 +30,8 @@ module Osakana
       ENV.key? "SLACK_WEBHOOK_URL"
     end
 
-    def self.notify(title, text)
-      new.notifiy(title, text)
+    def self.notify(title, attachments)
+      new.notifiy(title, attachments)
     end
   end
 end
