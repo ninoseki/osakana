@@ -14,6 +14,11 @@ module Osakana
       Monitor.censys_lookup(query)
     end
 
+    desc "ayashige_lookup [KEYWORD]", "lookup on Ayashige by a given keyword"
+    def ayashige_lookup(keyword)
+      Monitor.ayashige_lookup(keyword)
+    end
+
     no_commands do
       def with_error_handling
         yield
