@@ -8,6 +8,7 @@ Osakana is a Swiss army knife tool for my phishing research.
 
 ## Features
 
+- [Ayashige](https://github.com/ninoseki/ayashige) lookup
 - Censys lookup
 - Check newly registered domains on DNPedia by keyword
 - Slack integration
@@ -27,6 +28,7 @@ gem install osakana
 ```shell
 $ osakana
 Commands:
+  osakana ayashige_lookup [KEYWORD]      # lookup on Ayashige by a given keyword
   osakana censys_lookup [QUERY]          # lookup on Censys by a given query
   osakana check_newly_domains [KEYWORD]  # check newly registered domains on DNPedia by a given keyword
   osakana help [COMMAND]                 # Describe available commands or one specific command
