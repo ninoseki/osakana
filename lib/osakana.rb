@@ -4,6 +4,7 @@ require "osakana/version"
 
 require "osakana/website"
 
+require "osakana/ayashige"
 require "osakana/censys"
 require "osakana/dnpedia"
 
