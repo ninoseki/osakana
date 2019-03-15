@@ -19,5 +19,11 @@ module Osakana
       attachements = websites.map(&:to_attachement)
       Notifier.notify("Ayashige keyword: #{keyword}", attachements)
     end
+
+    def self.urlscan_lookup(query, size:)
+      websites = Urlscan.lookup(query, size: size)
+      attachements = websites.map(&:to_attachement)
+      Notifier.notify("urlscan.io query: #{query}", attachements)
+    end
   end
 end
