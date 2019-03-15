@@ -19,6 +19,12 @@ module Osakana
       Monitor.ayashige_lookup(keyword)
     end
 
+    desc "urlscan_lookup [QUERY]", "look up on urlscan.io by a given query"
+    option :size, type: :numeric, default: 100
+    def urlscan_lookup(query)
+      Monitor.urlscan_lookup(query, size: options.dig("size"))
+    end
+
     no_commands do
       def with_error_handling
         yield

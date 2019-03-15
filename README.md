@@ -11,6 +11,7 @@ Osakana is a Swiss army knife tool for my phishing research.
 - [Ayashige](https://github.com/ninoseki/ayashige) lookup
 - Censys lookup
 - Check newly registered domains on DNPedia by keyword
+- urlscan.io lookup
 - Slack integration
 
 ## Prerequisites
@@ -32,6 +33,7 @@ Commands:
   osakana censys_lookup [QUERY]          # lookup on Censys by a given query
   osakana check_newly_domains [KEYWORD]  # check newly registered domains on DNPedia by a given keyword
   osakana help [COMMAND]                 # Describe available commands or one specific command
+  osakana urlscan_lookup [QUERY]         # look up on urlscan.io by a given query
 ```
 
 ## Configuration

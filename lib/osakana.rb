@@ -7,6 +7,7 @@ require "osakana/website"
 require "osakana/ayashige"
 require "osakana/censys"
 require "osakana/dnpedia"
+require "osakana/urlscan"
 
 require "osakana/notifier"
 require "osakana/monitor"
