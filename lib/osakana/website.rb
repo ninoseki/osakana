@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "date"
-require "robtex"
 
 module Osakana
   class Website
@@ -16,29 +15,18 @@ module Osakana
       @domain = domain
       @date = date ? DateTime.parse(date).to_date.to_s : "N/A"
 
-      @robtex = Robtex::API.new
+      @enricher = Enrichers::Enricher.new
     end
 
     def domain
       @domain ||= [].tap do |out|
-        res = @robtex.ip(ipv4)
-        active = res.dig("act")
-        next unless active
-        next if active.empty?
-
-        out << active.first.dig("o")
+        out << @enricher.ipv4_to_domain(ipv4)
       end.first || "N/A"
     end
 
     def ipv4
       @ipv4 ||= [].tap do |out|
-        results = @robtex.fpdns(domain)
-        result = results.find do |res|
-          res.dig("rrtype") == "A"
-        end
-        next unless result
-
-        out << result.dig("rrdata")
+        out << @enricher.domain_to_ipv4(domain)
       end.first || "N/A"
     end
 

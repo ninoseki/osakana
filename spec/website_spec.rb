@@ -25,7 +25,7 @@ RSpec.describe Osakana::Website, :vcr do
 
     describe "#summary" do
       it "should return a summary of website" do
-        expect(website.summary).to eq("github.com, 192.30.252.120 (date: 2019-01-01)")
+        expect(website.summary).to eq("github.com, 192.30.253.113 (date: 2019-01-01)")
       end
     end
   end
@@ -40,7 +40,7 @@ RSpec.describe Osakana::Website, :vcr do
   end
 
   context "when given an IP with no active domain" do
-    let(:website) { subject.new(ipv4: "133.130.76.217", date: "2019-01-01") }
+    let(:website) { subject.new(ipv4: "67.229.196.131", date: "2019-01-01") }
     describe "#domain" do
       it "should return N/A" do
         expect(website.domain).to eq("N/A")

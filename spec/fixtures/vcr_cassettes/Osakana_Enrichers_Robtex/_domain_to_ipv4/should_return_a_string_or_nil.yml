@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/pdns/forward/github.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Mar 2019 22:38:23 GMT
+      Content-Type:
+      - application/x-ndjson
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0483c77651997ab7b4deec529c50bc601552689503; expires=Sat, 14-Mar-20
+        22:38:23 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Fri, 15 Mar 2019 10:48:09 GMT
+      Expires:
+      - Fri, 15 Mar 2019 10:49:09 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.007139982 0.006928084
+      Cf-Cache-Status:
+      - REVALIDATED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b81fa3399a1a524-NRT
+    body:
+      encoding: UTF-8
+      string: "{\"rrname\":\"github.com\",\"rrdata\":\"ns-421.awsdns-52.com\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1552115038,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns-520.awsdns-01.net\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1552115038,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns-1283.awsdns-32.org\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1552115038,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns1.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns2.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns3.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns4.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns-1707.awsdns-21.co.uk\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1552115038,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt1.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt2.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt3.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt4.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1552115038,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.120\",\"rrtype\":\"A\",\"time_first\":1465492748,\"time_last\":1465492748,\"count\":1}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.121\",\"rrtype\":\"A\",\"time_first\":1460614602,\"time_last\":1464969276,\"count\":3}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.122\",\"rrtype\":\"A\",\"time_first\":1461551416,\"time_last\":1461551416,\"count\":1}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.123\",\"rrtype\":\"A\",\"time_first\":1461371966,\"time_last\":1466568790,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.128\",\"rrtype\":\"A\",\"time_first\":1441287658,\"time_last\":1459225280,\"count\":62}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.129\",\"rrtype\":\"A\",\"time_first\":1441287658,\"time_last\":1464795724,\"count\":52}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.130\",\"rrtype\":\"A\",\"time_first\":1441760782,\"time_last\":1465935288,\"count\":60}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.131\",\"rrtype\":\"A\",\"time_first\":1441287658,\"time_last\":1461071436,\"count\":55}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.253.112\",\"rrtype\":\"A\",\"time_first\":1467878882,\"time_last\":1552115038,\"count\":97}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.253.113\",\"rrtype\":\"A\",\"time_first\":1467184934,\"time_last\":1552115038,\"count\":99}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.255.112\",\"rrtype\":\"A\",\"time_first\":1491277814,\"time_last\":1552115038,\"count\":76}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.255.113\",\"rrtype\":\"A\",\"time_first\":1491277814,\"time_last\":1552115038,\"count\":76}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"52.74.223.119\",\"rrtype\":\"A\",\"time_first\":1519708562,\"time_last\":1552115038,\"count\":8}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"13.250.177.223\",\"rrtype\":\"A\",\"time_first\":1519708562,\"time_last\":1552115038,\"count\":8}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"13.229.188.59\",\"rrtype\":\"A\",\"time_first\":1519708562,\"time_last\":1552115038,\"count\":8}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"140.82.118.3\",\"rrtype\":\"A\",\"time_first\":1541838436,\"time_last\":1551771036,\"count\":10}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"140.82.118.4\",\"rrtype\":\"A\",\"time_first\":1541838436,\"time_last\":1551771036,\"count\":10}\r\n"
+    http_version: 
+  recorded_at: Fri, 15 Mar 2019 22:38:23 GMT
+recorded_with: VCR 4.0.0

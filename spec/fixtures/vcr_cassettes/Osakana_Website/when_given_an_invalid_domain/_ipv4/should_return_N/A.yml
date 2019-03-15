@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://freeapi.robtex.com/pdns/forward/never_ever_exists.com
+    uri: https://api.securitytrails.com/v1/history/never_ever_exists.com/dns/a?page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -14,48 +14,45 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - freeapi.robtex.com
+      - api.securitytrails.com
+      Apikey:
+      - "<CENSORED/>"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 21 Feb 2019 00:48:28 GMT
+      - Fri, 15 Mar 2019 22:29:59 GMT
       Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '110'
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=d94e83604847b15ecd9455e1d244c7eee1550710108; expires=Fri, 21-Feb-20
-        00:48:28 GMT; path=/; domain=.robtex.com; HttpOnly
+      X-Ratelimit-Limit-Second:
+      - '2'
+      X-Ratelimit-Remaining-Second:
+      - '1'
       Cache-Control:
-      - max-age=60
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Thu, 21 Feb 2019 00:45:15 GMT
-      Expires:
-      - Thu, 21 Feb 2019 00:46:15 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.002960031 0.002577209
-      Cf-Cache-Status:
-      - REVALIDATED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 4ac5352139f645de-TPE
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - uirrlokv8bv0sm3e0adn6jippkt83p2q
+      X-Kong-Upstream-Latency:
+      - '100'
+      X-Kong-Proxy-Latency:
+      - '3'
+      Via:
+      - kong/0.11.2
     body:
       encoding: UTF-8
-      string: ''
+      string: |-
+        {
+          "type": "a/ipv4",
+          "records": [],
+          "pages": 0,
+          "endpoint": "/v1/history/never_ever_exists.com/dns/a"
+        }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 00:48:28 GMT
+  recorded_at: Fri, 15 Mar 2019 22:29:59 GMT
 recorded_with: VCR 4.0.0

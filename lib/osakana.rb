@@ -2,6 +2,11 @@
 
 require "osakana/version"
 
+require "osakana/enrichers/base"
+require "osakana/enrichers/robtex"
+require "osakana/enrichers/securitytrails"
+require "osakana/enrichers/enricher"
+
 require "osakana/website"
 
 require "osakana/ayashige"
