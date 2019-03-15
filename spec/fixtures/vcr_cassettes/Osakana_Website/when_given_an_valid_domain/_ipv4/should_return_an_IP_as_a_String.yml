@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://freeapi.robtex.com/pdns/forward/github.com
+    uri: https://api.securitytrails.com/v1/history/github.com/dns/a?page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -14,48 +14,1756 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - freeapi.robtex.com
+      - api.securitytrails.com
+      Apikey:
+      - "<CENSORED/>"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 21 Feb 2019 00:48:27 GMT
+      - Fri, 15 Mar 2019 22:29:56 GMT
       Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '32592'
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=d2af2c96447b1b8cdc3c6751f37cf0b121550710107; expires=Fri, 21-Feb-20
-        00:48:27 GMT; path=/; domain=.robtex.com; HttpOnly
+      X-Ratelimit-Limit-Second:
+      - '2'
+      X-Ratelimit-Remaining-Second:
+      - '0'
       Cache-Control:
-      - max-age=60
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Thu, 21 Feb 2019 00:48:27 GMT
-      Expires:
-      - Thu, 21 Feb 2019 00:49:27 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.006828169 0.006551703
-      Cf-Cache-Status:
-      - HIT
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 4ac5351e5e62458a-TPE
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - gnqmt5b7q6pj4gb10khg7i43sv1dr4o4
+      X-Kong-Upstream-Latency:
+      - '695'
+      X-Kong-Proxy-Latency:
+      - '3'
+      Via:
+      - kong/0.11.2
     body:
       encoding: UTF-8
-      string: "{\"rrname\":\"github.com\",\"rrdata\":\"ns-421.awsdns-52.com\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1549777578,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns-520.awsdns-01.net\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1549777578,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns-1283.awsdns-32.org\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1549777578,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns1.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns2.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns3.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns4.p16.dynect.net\",\"rrtype\":\"NS\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":6}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"ns-1707.awsdns-21.co.uk\",\"rrtype\":\"NS\",\"time_first\":1477258664,\"time_last\":1549777578,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt1.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt2.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt3.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"alt4.aspmx.l.google.com\",\"rrtype\":\"MX\",\"time_first\":1441287658,\"time_last\":1549777578,\"count\":2}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.120\",\"rrtype\":\"A\",\"time_first\":1465492748,\"time_last\":1465492748,\"count\":1}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.121\",\"rrtype\":\"A\",\"time_first\":1460614602,\"time_last\":1464969276,\"count\":3}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.122\",\"rrtype\":\"A\",\"time_first\":1461551416,\"time_last\":1461551416,\"count\":1}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.123\",\"rrtype\":\"A\",\"time_first\":1461371966,\"time_last\":1466568790,\"count\":4}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.128\",\"rrtype\":\"A\",\"time_first\":1441287658,\"time_last\":1459225280,\"count\":62}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.129\",\"rrtype\":\"A\",\"time_first\":1441287658,\"time_last\":1464795724,\"count\":52}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.130\",\"rrtype\":\"A\",\"time_first\":1441760782,\"time_last\":1465935288,\"count\":60}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.252.131\",\"rrtype\":\"A\",\"time_first\":1441287658,\"time_last\":1461071436,\"count\":55}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.253.112\",\"rrtype\":\"A\",\"time_first\":1467878882,\"time_last\":1549777578,\"count\":92}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.253.113\",\"rrtype\":\"A\",\"time_first\":1467184934,\"time_last\":1549777578,\"count\":94}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.255.112\",\"rrtype\":\"A\",\"time_first\":1491277814,\"time_last\":1549777578,\"count\":74}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"192.30.255.113\",\"rrtype\":\"A\",\"time_first\":1491277814,\"time_last\":1549777578,\"count\":74}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"52.74.223.119\",\"rrtype\":\"A\",\"time_first\":1519708562,\"time_last\":1549777578,\"count\":8}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"13.250.177.223\",\"rrtype\":\"A\",\"time_first\":1519708562,\"time_last\":1549777578,\"count\":8}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"13.229.188.59\",\"rrtype\":\"A\",\"time_first\":1519708562,\"time_last\":1549777578,\"count\":8}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"140.82.118.3\",\"rrtype\":\"A\",\"time_first\":1541838436,\"time_last\":1549777578,\"count\":9}\r\n{\"rrname\":\"github.com\",\"rrdata\":\"140.82.118.4\",\"rrtype\":\"A\",\"time_first\":1541838436,\"time_last\":1549777578,\"count\":9}\r\n"
+      string: |-
+        {
+          "type": "a/ipv4",
+          "records": [
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2019-03-15",
+              "first_seen": "2018-09-11"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-09-11",
+              "first_seen": "2018-09-10"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-09-10",
+              "first_seen": "2018-09-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-09-05",
+              "first_seen": "2018-09-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-09-04",
+              "first_seen": "2018-08-30"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-30",
+              "first_seen": "2018-08-29"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-29",
+              "first_seen": "2018-08-28"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-28",
+              "first_seen": "2018-08-27"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-27",
+              "first_seen": "2018-08-22"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-22",
+              "first_seen": "2018-08-21"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-21",
+              "first_seen": "2018-08-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-20",
+              "first_seen": "2018-08-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-19",
+              "first_seen": "2018-08-10"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-10",
+              "first_seen": "2018-08-09"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-09",
+              "first_seen": "2018-08-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-04",
+              "first_seen": "2018-08-02"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-08-02",
+              "first_seen": "2018-07-31"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-31",
+              "first_seen": "2018-07-30"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-30",
+              "first_seen": "2018-07-24"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-24",
+              "first_seen": "2018-07-23"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-23",
+              "first_seen": "2018-07-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-20",
+              "first_seen": "2018-07-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-19",
+              "first_seen": "2018-07-16"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-07-16",
+              "first_seen": "2018-06-28"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-06-28",
+              "first_seen": "2018-06-07"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-06-07",
+              "first_seen": "2018-06-06"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-06-06",
+              "first_seen": "2018-06-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-06-05",
+              "first_seen": "2018-06-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-06-04",
+              "first_seen": "2018-05-30"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-30",
+              "first_seen": "2018-05-29"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-29",
+              "first_seen": "2018-05-24"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-24",
+              "first_seen": "2018-05-23"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-23",
+              "first_seen": "2018-05-14"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-14",
+              "first_seen": "2018-05-13"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-13",
+              "first_seen": "2018-05-08"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-08",
+              "first_seen": "2018-05-07"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-05-07",
+              "first_seen": "2018-04-24"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-24",
+              "first_seen": "2018-04-23"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-23",
+              "first_seen": "2018-04-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-20",
+              "first_seen": "2018-04-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-19",
+              "first_seen": "2018-04-12"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-12",
+              "first_seen": "2018-04-11"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-11",
+              "first_seen": "2018-04-08"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-08",
+              "first_seen": "2018-04-07"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-07",
+              "first_seen": "2018-04-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-04",
+              "first_seen": "2018-04-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-04-03",
+              "first_seen": "2018-03-06"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-03-06",
+              "first_seen": "2018-03-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-03-05",
+              "first_seen": "2018-03-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-03-04",
+              "first_seen": "2018-03-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-03-03",
+              "first_seen": "2018-02-24"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-24",
+              "first_seen": "2018-02-23"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-23",
+              "first_seen": "2018-02-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-20",
+              "first_seen": "2018-02-18"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-18",
+              "first_seen": "2018-02-14"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-14",
+              "first_seen": "2018-02-13"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-13",
+              "first_seen": "2018-02-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-05",
+              "first_seen": "2018-02-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-04",
+              "first_seen": "2018-02-02"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-02",
+              "first_seen": "2018-02-01"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-02-01",
+              "first_seen": "2018-01-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-20",
+              "first_seen": "2018-01-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-19",
+              "first_seen": "2018-01-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-17",
+              "first_seen": "2018-01-16"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-16",
+              "first_seen": "2018-01-10"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-10",
+              "first_seen": "2018-01-09"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-09",
+              "first_seen": "2018-01-06"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-06",
+              "first_seen": "2018-01-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-05",
+              "first_seen": "2018-01-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-04",
+              "first_seen": "2018-01-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-03",
+              "first_seen": "2018-01-02"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-02",
+              "first_seen": "2018-01-01"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2018-01-01",
+              "first_seen": "2017-12-31"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-31",
+              "first_seen": "2017-12-30"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-30",
+              "first_seen": "2017-12-26"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-26",
+              "first_seen": "2017-12-25"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-25",
+              "first_seen": "2017-12-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-17",
+              "first_seen": "2017-12-16"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-16",
+              "first_seen": "2017-12-14"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-14",
+              "first_seen": "2017-12-13"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-13",
+              "first_seen": "2017-12-06"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-06",
+              "first_seen": "2017-12-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-12-05",
+              "first_seen": "2017-11-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-19",
+              "first_seen": "2017-11-18"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-18",
+              "first_seen": "2017-11-16"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-16",
+              "first_seen": "2017-11-15"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-15",
+              "first_seen": "2017-11-13"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-13",
+              "first_seen": "2017-11-12"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-12",
+              "first_seen": "2017-11-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-05",
+              "first_seen": "2017-11-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-04",
+              "first_seen": "2017-11-01"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-11-01",
+              "first_seen": "2017-10-29"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-10-29",
+              "first_seen": "2017-10-15"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 10,
+                  "ip": "192.30.255.113"
+                },
+                {
+                  "ip_count": 23,
+                  "ip": "192.30.255.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-10-15",
+              "first_seen": "2017-10-14"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 116,
+                  "ip": "192.30.253.113"
+                },
+                {
+                  "ip_count": 112,
+                  "ip": "192.30.253.112"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GitHub, Inc."
+              ],
+              "last_seen": "2017-10-14",
+              "first_seen": "2017-10-11"
+            }
+          ],
+          "pages": 8,
+          "endpoint": "/v1/history/github.com/dns/a"
+        }
     http_version: 
-  recorded_at: Thu, 21 Feb 2019 00:48:27 GMT
+  recorded_at: Fri, 15 Mar 2019 22:29:56 GMT
 recorded_with: VCR 4.0.0

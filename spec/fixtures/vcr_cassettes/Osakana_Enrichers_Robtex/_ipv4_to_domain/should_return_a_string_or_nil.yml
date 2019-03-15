@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freeapi.robtex.com/ipquery/1.1.1.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freeapi.robtex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Mar 2019 22:38:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2973324e7d7172c61b63635e14b6a1531552689503; expires=Sat, 14-Mar-20
+        22:38:23 GMT; path=/; domain=.robtex.com; HttpOnly
+      Cache-Control:
+      - max-age=60
+      Content-Language:
+      - en-US
+      Last-Modified:
+      - Fri, 15 Mar 2019 22:08:13 GMT
+      Expires:
+      - Fri, 15 Mar 2019 22:09:13 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Rt-Time:
+      - 0.015629841 0.015340976
+      Cf-Cache-Status:
+      - REVALIDATED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b81fa356975a530-NRT
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        eyJzdGF0dXMiOiJvayIsImFjdCI6W3sibyI6Im9uZS5vbmUub25lLm9uZSIs
+        InQiOjE1NTI1ODU3NjZ9XSwiYWN0aCI6W3sibyI6IjFkb3QxZG90MWRvdDEu
+        Y2xvdWRmbGFyZS1kbnMuY29tIiwidCI6MTU1MjU4NTc2N30seyJvIjoib25l
+        LmNsb3VkZmxhcmUtZG5zLmNvbSIsInQiOjE1NTI1ODU3Njd9XSwicGFzIjpb
+        eyJvIjoiemMzM28uY29tIiwidCI6MTUzNTI4NDY3OH0seyJvIjoic3pvbG9w
+        aWFjLmh1IiwidCI6MTUwNDg3NTI2MH0seyJvIjoibHNnaHEuY29tIiwidCI6
+        MTUyOTAwMDc2OH0seyJvIjoiYmh1YTk0MC5jb20iLCJ0IjoxNTM3NjU1MDc0
+        fSx7Im8iOiJ0c2R3dy5jbiIsInQiOjE1MDY2MTM4NzR9LHsibyI6Inl1dHBs
+        Yy5jb20iLCJ0IjoxNDgzNTc1MTI4fSx7Im8iOiJ3aXItaGFiZW4tZGVuLWRy
+        ZWgtcmF1cy5kZSIsInQiOjE0ODU0NzM4MzB9LHsibyI6Im1vYmlsZWludGVy
+        bmV0cm9jaGVzdGVyLmNvbSIsInQiOjE0NDMzMDYwMzJ9LHsibyI6IjUxcXVi
+        by5jb20iLCJ0IjoxNDk0MjY2MjUwfSx7Im8iOiI1NTg2YS5jb20iLCJ0Ijox
+        NTAzMzE1OTkyfV0sInBhc2giOlt7Im8iOiJzYW50YXJvc2FjYWJsZXR2LmNv
+        bSIsInQiOjE1MjA1NDcyMzd9LHsibyI6InNoYW5kb25nc2R3bi5jb20iLCJ0
+        IjoxNDkwODE5NDgxfSx7Im8iOiJkZXNpZ25kZXJpdmF0aW9ucy5jb20iLCJ0
+        IjoxNTI1MzQ5MDIzfSx7Im8iOiIzNjE4NC5jb20iLCJ0IjoxNDgyMTY2MTcx
+        fSx7Im8iOiJ4bi0tdmNzMzEyY3psazF6cC5jb20iLCJ0IjoxNDkxMjY1OTM3
+        fSx7Im8iOiJzYTIyODguY29tIiwidCI6MTUwMzMyOTU3MX0seyJvIjoiMjc0
+        MjQuY29tIiwidCI6MTQ3NzMxMjMyN30seyJvIjoiYmp3dWppbmdzYW55dWFu
+        LmNvbSIsInQiOjE0NzAyNjIwMjV9LHsibyI6IjE5MC0xLTYxLTI5LmJ2Y29u
+        bGluZS5jb20uYXIiLCJ0IjoxNDkxMTIwNTExfSx7Im8iOiJtb2JpbGVpbnRl
+        cm5ldHJvY2hlc3Rlci5jb20iLCJ0IjoxNDkyMDcwNDU1fV0sImNpdHkiOiJS
+        ZXNlYXJjaCIsImNvdW50cnkiOiJBdXN0cmFsaWEiLCJhcyI6MTMzMzUsImFz
+        ZGVzYyI6IkFTTi1DT05ORUNULU5FVCBBQVBUIExpbWl0ZWQiLCJ3aG9pc2Rl
+        c2MiOiJBUE5JQyBhbmQgQ2xvdWRmbGFyZSBETlMgUmVzb2x2ZXIgcHJvamVj
+        dCBSb3V0ZWQgZ2xvYmFsbHkgYnkgQVMxMzMzNS9DbG91ZGZsYXJlIFJlc2Vh
+        cmNoIHByZWZpeCBmb3IgQVBOSUMgTGFicyIsInJvdXRlZGVzYyI6IkN1c3Rv
+        bWVyIG9mIEFTMjc2NCIsImJncHJvdXRlIjoiMS4xLjEuMC8yNCJ9
+    http_version: 
+  recorded_at: Fri, 15 Mar 2019 22:38:23 GMT
+recorded_with: VCR 4.0.0

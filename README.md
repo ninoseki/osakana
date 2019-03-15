@@ -8,11 +8,16 @@ Osakana is a Swiss army knife tool for my phishing research.
 
 ## Features
 
-- [Ayashige](https://github.com/ninoseki/ayashige) lookup
-- Censys lookup
-- Check newly registered domains on DNPedia by keyword
-- urlscan.io lookup
-- Slack integration
+- Lookup supports:
+  - [Ayashige](https://github.com/ninoseki/ayashige) lookup
+  - Censys lookup
+  - DNPedia (newly registered domains) lookup
+  - urlscan.io lookup
+- IoC enrichment:
+  - SecurityTrails integration (an API Key is required)
+  - Robtex integration
+- Notification:
+  - Slack notification
 
 ## Prerequisites
 
@@ -42,15 +47,21 @@ Commands:
 
 Please set the following environmental variables for enabling Censys lookup.
 
-- CENSYS_ID: your Censys API ID
-- CENSYS_SECRET: your Censys secret key
+- `CENSYS_ID`: your Censys API ID
+- `CENSYS_SECRET`: your Censys secret key
+
+### SecurityTrails
+
+Please set the following environmental variable for enabling SecurityTrails integration.
+
+- `SECURITYTRAILS_API_KEY`: your SecurityTrails API key
 
 ### Slack
 
-Please set the following environmental variables for enabling Slack integration.
+Please set the following environmental variables for enabling Slack notification.
 
-- SLACK_WEBHOOK_URL: A Slack webhook URL.
-- SLACK_CHANNEL_NAME: A Slask channel name which will be notified.
+- `SLACK_WEBHOOK_URL`: A Slack webhook URL.
+- `SLACK_CHANNEL_NAME`: A Slask channel name which will be notified.
 
 ## Screenshots
 

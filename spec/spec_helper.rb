@@ -46,4 +46,5 @@ VCR.configure do |config|
   end
 
   config.filter_sensitive_data("<CENSORED/>") { authorization_field }
+  config.filter_sensitive_data("<CENSORED/>") { ENV["SECURITYTRAILS_API_KEY"] }
 end

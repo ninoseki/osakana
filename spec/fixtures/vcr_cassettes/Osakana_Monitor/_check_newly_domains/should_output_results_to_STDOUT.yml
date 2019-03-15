@@ -18,18 +18,18 @@ http_interactions:
       Host:
       - dnpedia.com
       User-Agent:
-      - http.rb/4.0.3
+      - http.rb/4.1.1
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 22 Jan 2019 23:04:36 GMT
+      - Fri, 15 Mar 2019 22:30:26 GMT
       Server:
       - Apache/2.4.25 (Debian)
       Set-Cookie:
-      - PHPSESSID=0jqq9f0nu06fi6q74rtiihj8tg; path=/
+      - PHPSESSID=pp55ji57rc9i3ii2etup8cms7f; path=/
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -41,7 +41,7 @@ http_interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '260'
+      - '199'
       Connection:
       - close
       Content-Type:
@@ -49,17 +49,16 @@ http_interactions:
     body:
       encoding: UTF-8
       base64_string: |
-        H4sIAAAAAAAAA83VzYqDMBAH8HeZc4RE+2VfZdnDrAYNq8bGUWlL372jtFA6
-        0NsukRz+E5PJ7zZX6LGycDQKyBM2awq28KEcOKcKBsJAcNQKGtc6TlvNOfiZ
-        /39dwZW8k2m9O+wUdNhyLxiwwhmT02hBwcV3djkEhW+5bGxXUc2tuYkru7Ux
-        1bZEWm6m2uSJNklq+Kjrpw3vrQmHR+9nNbY/NjzrorbFr10e0fwl64KbetXt
-        pc7FoztInY9Hl0tdH40u11J3ikdnpC7Eo0uljuLRZVI3xqPbSN0cj24rded4
-        dO+zgqdN46ZP4yL7X+D7uGAgTR945s9537c78x41OawHAAA=
+        H4sIAAAAAAAAA62OzQ6CMBCE32XPJSkFNPAqxsNKV2j4KWmLGAnv7oIST3qy
+        6WFmuzP9ZhiwIihiAcEGbDflqLROeyiUAB/QBSikgNZ0hlUmWTs78fNpBqM5
+        karsqNZxjx13wXV0phk9VjghCHjYntY9KG3HtqW+CjXHuN3ofusONWkMa1bJ
+        OI9kEsUpr5rhlvJsU+jf7bsbuwu53Zc1lQ2tn0g+0XZhETtgJvND8gF8odF9
+        +E6X/4TL/gB3Xp61CaR3fQEAAA==
     http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:36 GMT
+  recorded_at: Fri, 15 Mar 2019 22:30:27 GMT
 - request:
     method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-que.com
+    uri: https://api.securitytrails.com/v1/history/furikusagawa.com/dns/a?page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -71,53 +70,50 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - freeapi.robtex.com
+      - api.securitytrails.com
+      Apikey:
+      - "<CENSORED/>"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 22 Jan 2019 23:04:36 GMT
+      - Fri, 15 Mar 2019 22:30:28 GMT
       Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '105'
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=d00e97d6f87dfb07ce4912b451af829e51548198276; expires=Wed, 22-Jan-20
-        23:04:36 GMT; path=/; domain=.robtex.com; HttpOnly
+      X-Ratelimit-Limit-Second:
+      - '2'
+      X-Ratelimit-Remaining-Second:
+      - '1'
       Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:19 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:19 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.077078658 0.076812149
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a91a8971a524-NRT
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0snoe936lgmcj5smofabl6e3kgsoanfv
+      X-Kong-Upstream-Latency:
+      - '202'
+      X-Kong-Proxy-Latency:
+      - '3'
+      Via:
+      - kong/0.11.2
     body:
       encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-que.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n{\"rrname\":\"sagawa-que.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n"
+      string: |-
+        {
+          "type": "a/ipv4",
+          "records": [],
+          "pages": 0,
+          "endpoint": "/v1/history/furikusagawa.com/dns/a"
+        }
     http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:36 GMT
+  recorded_at: Fri, 15 Mar 2019 22:30:28 GMT
 - request:
     method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qui.com
+    uri: https://api.securitytrails.com/v1/history/sagawaexp.com/dns/a?page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -129,628 +125,879 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - freeapi.robtex.com
+      - api.securitytrails.com
+      Apikey:
+      - "<CENSORED/>"
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 22 Jan 2019 23:04:37 GMT
+      - Fri, 15 Mar 2019 22:30:29 GMT
       Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '16077'
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=db0471ad0df6b88fd1b223540a8b9c1431548198276; expires=Wed, 22-Jan-20
-        23:04:36 GMT; path=/; domain=.robtex.com; HttpOnly
+      X-Ratelimit-Limit-Second:
+      - '2'
+      X-Ratelimit-Remaining-Second:
+      - '0'
       Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:20 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:20 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.079144839 0.078826992
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a91d9cdba536-NRT
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - t2540hj324bb1gh0bqst2g0dml3maodi
+      X-Kong-Upstream-Latency:
+      - '261'
+      X-Kong-Proxy-Latency:
+      - '2'
+      Via:
+      - kong/0.11.2
     body:
       encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-qui.com\",\"rrdata\":\"111.240.227.179\",\"rrtype\":\"A\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":9}\r\n{\"rrname\":\"sagawa-qui.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n{\"rrname\":\"sagawa-qui.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137922,\"time_last\":1548137922,\"count\":1}\r\n"
+      string: |-
+        {
+          "type": "a/ipv4",
+          "records": [
+            {
+              "values": [
+                {
+                  "ip_count": 102797,
+                  "ip": "50.63.202.76"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-02-14",
+              "first_seen": "2019-01-21"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102767,
+                  "ip": "50.63.202.87"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-21",
+              "first_seen": "2019-01-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102813,
+                  "ip": "184.168.221.64"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-20",
+              "first_seen": "2019-01-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102767,
+                  "ip": "50.63.202.87"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-19",
+              "first_seen": "2019-01-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102813,
+                  "ip": "184.168.221.64"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-17",
+              "first_seen": "2019-01-16"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102767,
+                  "ip": "50.63.202.87"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-16",
+              "first_seen": "2019-01-14"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 103313,
+                  "ip": "50.63.202.86"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-14",
+              "first_seen": "2019-01-12"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102629,
+                  "ip": "50.63.202.84"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-12",
+              "first_seen": "2019-01-11"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 101761,
+                  "ip": "184.168.221.78"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-11",
+              "first_seen": "2019-01-10"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 103086,
+                  "ip": "50.63.202.72"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-10",
+              "first_seen": "2019-01-09"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102557,
+                  "ip": "184.168.221.75"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-09",
+              "first_seen": "2019-01-08"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 103311,
+                  "ip": "184.168.221.72"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-08",
+              "first_seen": "2019-01-07"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-07",
+              "first_seen": "2019-01-06"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102772,
+                  "ip": "184.168.221.95"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-06",
+              "first_seen": "2019-01-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 103311,
+                  "ip": "184.168.221.72"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-04",
+              "first_seen": "2019-01-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102772,
+                  "ip": "184.168.221.95"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-03",
+              "first_seen": "2019-01-01"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2019-01-01",
+              "first_seen": "2018-12-31"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102772,
+                  "ip": "184.168.221.95"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-31",
+              "first_seen": "2018-12-29"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-29",
+              "first_seen": "2018-12-28"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 103311,
+                  "ip": "184.168.221.72"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-28",
+              "first_seen": "2018-12-27"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-27",
+              "first_seen": "2018-12-26"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102772,
+                  "ip": "184.168.221.95"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-26",
+              "first_seen": "2018-12-25"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-25",
+              "first_seen": "2018-12-23"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102772,
+                  "ip": "184.168.221.95"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-23",
+              "first_seen": "2018-12-21"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-21",
+              "first_seen": "2018-12-20"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102894,
+                  "ip": "50.63.202.88"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-20",
+              "first_seen": "2018-12-19"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-19",
+              "first_seen": "2018-12-18"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 103311,
+                  "ip": "184.168.221.72"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-18",
+              "first_seen": "2018-12-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 102506,
+                  "ip": "50.63.202.91"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GoDaddy.com, LLC"
+              ],
+              "last_seen": "2018-12-17",
+              "first_seen": "2018-12-16"
+            },
+            {
+              "values": [],
+              "type": "a",
+              "organizations": [],
+              "last_seen": "2018-12-16",
+              "first_seen": "2016-04-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2016-04-17",
+              "first_seen": "2016-04-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 511,
+                  "ip": "70.32.1.32"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GigeNET"
+              ],
+              "last_seen": "2016-04-04",
+              "first_seen": "2016-04-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2016-04-03",
+              "first_seen": "2016-04-02"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 511,
+                  "ip": "70.32.1.32"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "GigeNET"
+              ],
+              "last_seen": "2016-04-02",
+              "first_seen": "2016-04-01"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2016-04-01",
+              "first_seen": "2016-03-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2016-03-17",
+              "first_seen": "2016-03-16"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2016-03-16",
+              "first_seen": "2016-02-29"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2016-02-29",
+              "first_seen": "2016-02-28"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2016-02-28",
+              "first_seen": "2015-12-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 701,
+                  "ip": "192.64.147.206"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Voodoo.com, Inc"
+              ],
+              "last_seen": "2015-12-03",
+              "first_seen": "2015-10-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2015-10-04",
+              "first_seen": "2015-10-03"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2015-10-03",
+              "first_seen": "2015-10-02"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2015-10-02",
+              "first_seen": "2015-10-01"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2015-10-01",
+              "first_seen": "2015-09-30"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2015-09-30",
+              "first_seen": "2015-09-29"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2015-09-29",
+              "first_seen": "2015-09-18"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 47917,
+                  "ip": "192.184.12.62"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Level 3 Parent, LLC"
+              ],
+              "last_seen": "2015-09-18",
+              "first_seen": "2015-09-13"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2015-09-13",
+              "first_seen": "2015-08-14"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 701,
+                  "ip": "192.64.147.206"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Voodoo.com, Inc"
+              ],
+              "last_seen": "2015-08-14",
+              "first_seen": "2015-06-04"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 29538,
+                  "ip": "103.224.182.241"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Trellian Pty. Limited"
+              ],
+              "last_seen": "2015-06-04",
+              "first_seen": "2015-04-25"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 0,
+                  "ip": "69.43.160.168"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Castle Access Inc"
+              ],
+              "last_seen": "2015-04-25",
+              "first_seen": "2015-04-18"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 701,
+                  "ip": "192.64.147.206"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Voodoo.com, Inc"
+              ],
+              "last_seen": "2015-04-18",
+              "first_seen": "2015-04-17"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 0,
+                  "ip": "66.246.235.175"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Net Access Corporation"
+              ],
+              "last_seen": "2015-04-17",
+              "first_seen": "2013-06-23"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 1,
+                  "ip": "66.246.235.44"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Net Access Corporation"
+              ],
+              "last_seen": "2013-06-23",
+              "first_seen": "2013-01-12"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 0,
+                  "ip": "66.246.235.154"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Net Access Corporation"
+              ],
+              "last_seen": "2013-01-12",
+              "first_seen": "2013-01-11"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 1,
+                  "ip": "66.246.235.44"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Net Access Corporation"
+              ],
+              "last_seen": "2013-01-11",
+              "first_seen": "2012-06-28"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 20,
+                  "ip": "184.105.178.90"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Hurricane Electric LLC"
+              ],
+              "last_seen": "2012-06-28",
+              "first_seen": "2012-03-05"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 0,
+                  "ip": "65.19.157.235"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "Hurricane Electric LLC"
+              ],
+              "last_seen": "2012-03-05",
+              "first_seen": "2012-02-25"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 3,
+                  "ip": "112.121.186.34"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "NETSEC"
+              ],
+              "last_seen": "2012-02-25",
+              "first_seen": "2011-07-18"
+            },
+            {
+              "values": [
+                {
+                  "ip_count": 0,
+                  "ip": "58.30.231.115"
+                }
+              ],
+              "type": "a",
+              "organizations": [
+                "srit corp.,beijing."
+              ],
+              "last_seen": "2011-07-18",
+              "first_seen": "2011-03-04"
+            }
+          ],
+          "pages": 1,
+          "endpoint": "/v1/history/sagawaexp.com/dns/a"
+        }
     http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:37 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quo.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:37 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=df07f8a1db5074a0484bc13c80e6feb9a1548198277; expires=Wed, 22-Jan-20
-        23:04:37 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:20 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:20 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.00227347 0.002087645
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a920dbbd94ed-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-quo.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n{\"rrname\":\"sagawa-quo.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:37 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qup.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:38 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d9e7f772b5953bd9cdf30983cfccdb16b1548198277; expires=Wed, 22-Jan-20
-        23:04:37 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:21 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:21 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.007136486 0.006725858
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a92408399511-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-qup.com\",\"rrdata\":\"111.240.227.179\",\"rrtype\":\"A\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":9}\r\n{\"rrname\":\"sagawa-qup.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n{\"rrname\":\"sagawa-qup.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137926,\"time_last\":1548137926,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:38 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quq.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:38 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d3078baca3a6d9fe68a6af6130b1ac9931548198278; expires=Wed, 22-Jan-20
-        23:04:38 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:21 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:21 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.086174145 0.085915624
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a9268b52a530-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-quq.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n{\"rrname\":\"sagawa-quq.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:38 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qur.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:39 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=dba8f269f27788a573b9000c7471d5aa81548198278; expires=Wed, 22-Jan-20
-        23:04:38 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:22 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:22 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.014869642 0.014603555
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a929ca0e94cf-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-qur.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n{\"rrname\":\"sagawa-qur.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:39 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-qut.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:39 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=dcc9f445dd22528bfe46ba7570af1bd7b1548198279; expires=Wed, 22-Jan-20
-        23:04:39 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:22 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:22 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.015828993 0.015565664
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a92c69f2a536-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-qut.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n{\"rrname\":\"sagawa-qut.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137930,\"time_last\":1548137930,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:39 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quu.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:40 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=dcf5682ea1f3849ee4db47b10d66783e11548198279; expires=Wed, 22-Jan-20
-        23:04:39 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:23 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:23 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.07369228 0.073433167
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a92f8b0494c9-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-quu.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n{\"rrname\":\"sagawa-quu.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n{\"rrname\":\"sagawa-quu.com\",\"rrdata\":\"111.240.227.179\",\"rrtype\":\"A\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":9}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:40 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quw.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:40 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d6822982c5fa6f7493e44502afc113a971548198280; expires=Wed, 22-Jan-20
-        23:04:40 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:23 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:23 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.016161431 0.015934501
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a932bbfca524-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-quw.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137924,\"time_last\":1548137924,\"count\":1}\r\n{\"rrname\":\"sagawa-quw.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137924,\"time_last\":1548137924,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:40 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawa-quy.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:41 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=da0df8b1d4980fe0501d44abb1d067e2e1548198280; expires=Wed, 22-Jan-20
-        23:04:40 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:24 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:24 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.044500148 0.04427044
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a935ea4aa52a-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawa-quy.com\",\"rrdata\":\"ns2.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n{\"rrname\":\"sagawa-quy.com\",\"rrdata\":\"ns1.bdydns.cn\",\"rrtype\":\"NS\",\"time_first\":1548137920,\"time_last\":1548137920,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:41 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawardslive.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:41 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=dabe64d49a8355971d458712d0541528d1548198281; expires=Wed, 22-Jan-20
-        23:04:41 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:24 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:24 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.134411402 0.134157078
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a9392909a530-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"198.54.115.183\",\"rrtype\":\"A\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":9}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"smx1.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"dns1.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"smx3.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"smx2.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n{\"rrname\":\"sagawardslive.com\",\"rrdata\":\"dns2.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529336,\"time_last\":1516529336,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:41 GMT
-- request:
-    method: get
-    uri: https://freeapi.robtex.com/pdns/forward/sagawardstv.com
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - freeapi.robtex.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 22 Jan 2019 23:04:42 GMT
-      Content-Type:
-      - application/x-ndjson
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Set-Cookie:
-      - __cfduid=d7b463d7746fa550530a48fda3d1a59bb1548198281; expires=Wed, 22-Jan-20
-        23:04:41 GMT; path=/; domain=.robtex.com; HttpOnly
-      Cache-Control:
-      - max-age=60, public
-      Content-Language:
-      - en-US
-      Last-Modified:
-      - Tue, 22 Jan 2019 23:04:25 GMT
-      Expires:
-      - Tue, 22 Jan 2019 23:05:25 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Rt-Time:
-      - 0.002901925 0.002602836
-      Cf-Cache-Status:
-      - EXPIRED
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Vary:
-      - Accept-Encoding
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 49d5a93cf94e9511-NRT
-    body:
-      encoding: UTF-8
-      string: "{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"198.54.115.183\",\"rrtype\":\"A\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":9}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"smx3.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"dns2.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"smx1.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"smx2.web-hosting.com\",\"rrtype\":\"MX\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n{\"rrname\":\"sagawardstv.com\",\"rrdata\":\"dns1.namecheaphosting.com\",\"rrtype\":\"NS\",\"time_first\":1516529334,\"time_last\":1516529334,\"count\":1}\r\n"
-    http_version: 
-  recorded_at: Tue, 22 Jan 2019 23:04:42 GMT
+  recorded_at: Fri, 15 Mar 2019 22:30:29 GMT
 recorded_with: VCR 4.0.0
