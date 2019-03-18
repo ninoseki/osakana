@@ -25,7 +25,7 @@ RSpec.describe Osakana::Website, :vcr do
 
     describe "#summary" do
       it "should return a summary of website" do
-        expect(website.summary).to eq("github.com, 192.30.253.113 (date: 2019-01-01)")
+        expect(website.summary).to eq("github.com, 192.30.253.113 🇺🇸 (date: 2019-01-01)")
       end
     end
   end

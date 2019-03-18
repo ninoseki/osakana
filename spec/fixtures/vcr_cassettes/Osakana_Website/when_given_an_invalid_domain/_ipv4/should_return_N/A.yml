@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 15 Mar 2019 22:29:59 GMT
+      - Mon, 18 Mar 2019 20:26:38 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -37,11 +37,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - uirrlokv8bv0sm3e0adn6jippkt83p2q
+      - 2vk1ocburnv7crm1acdlv193mtq1hkti
       X-Kong-Upstream-Latency:
-      - '100'
+      - '143'
       X-Kong-Proxy-Latency:
-      - '3'
+      - '1'
       Via:
       - kong/0.11.2
     body:
@@ -54,5 +54,5 @@ http_interactions:
           "endpoint": "/v1/history/never_ever_exists.com/dns/a"
         }
     http_version: 
-  recorded_at: Fri, 15 Mar 2019 22:29:59 GMT
+  recorded_at: Mon, 18 Mar 2019 20:26:38 GMT
 recorded_with: VCR 4.0.0

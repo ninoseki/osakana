@@ -32,7 +32,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock", "~> 3.5"
 
   spec.add_dependency "censu", "~> 0.2"
-  spec.add_dependency "http", "~> 4.0"
+  spec.add_dependency "http", "~> 4.1"
+  spec.add_dependency "kokki", "~> 0.1"
   spec.add_dependency "robtex", "~> 0.1"
   spec.add_dependency "securitytrails", "~> 0.1"
   spec.add_dependency "slack-incoming-webhooks", "~> 0.2"

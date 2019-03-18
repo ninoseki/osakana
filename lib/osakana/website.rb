@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "date"
+require "kokki"
 
 module Osakana
   class Website
@@ -31,7 +32,12 @@ module Osakana
     end
 
     def summary
-      @summary ||= "#{domain}, #{ipv4} (date: #{date})"
+      @summary ||=
+        [].tap do |out|
+          out << "#{domain}, #{ipv4} #{Kokki.flagize(ipv4)} (date: #{date})"
+        rescue Kokki::InvalidInputError => _
+          out << "#{domain}, #{ipv4} (date: #{date})"
+        end.first
     end
 
     def vt_link

@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 15 Mar 2019 22:34:43 GMT
+      - Mon, 18 Mar 2019 20:26:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -37,11 +37,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dnojii265ovhalg7ailq02n6lcstk439
+      - jpbj0qr8bakn841gtors4rrt3o5q8hh4
       X-Kong-Upstream-Latency:
-      - '21'
+      - '13'
       X-Kong-Proxy-Latency:
-      - '1'
+      - '2'
       Via:
       - kong/0.11.2
     body:
@@ -59,5 +59,5 @@ http_interactions:
           "endpoint": "/v1/domains/list"
         }
     http_version: 
-  recorded_at: Fri, 15 Mar 2019 22:34:43 GMT
+  recorded_at: Mon, 18 Mar 2019 20:26:38 GMT
 recorded_with: VCR 4.0.0

@@ -5,8 +5,8 @@ RSpec.describe Osakana::Monitor, :vcr do
 
   describe ".check_newly_domains" do
     it "should output results to STDOUT" do
-      output = capture(:stdout) { subject.check_newly_domains "sagawa" }
-      expect(output).to include "sagawa"
+      output = capture(:stdout) { subject.check_newly_domains "docomo" }
+      expect(output).to include "docomo"
     end
   end
 
